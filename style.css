@@ -6,28 +6,57 @@ body {
   font-family: sans-serif;
 }
 
+.titlebar img {
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-30 {
+  width: 30%;
+}
 .col-40 {
   width: 40%;
 }
 
 .col-60 {
-  width: 60%;
-  padding-left: 15px;
+  width: 60%; 
 }
 
 [class*="col-"] {
   float: left;
-  column-gap: 10px;
+}
+
+.titlebar img {
+	float: left;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.titlename {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px; 
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  padding: 20px;
+  border: 3px solid black; 
+  font-weight: bold;
 }
 
 .ingredients table {
   float: right;
 }
 
-.ingredients li {
-}
-
-.ingredients img {
+img {
   max-width: 100%;
   height: auto;
 }
@@ -39,7 +68,6 @@ body {
 .instructions li:nth-child(even) {
   background-color: #d2d2d2;
 }
-
 
 /* Clear floats after the columns */
 .row:after {
