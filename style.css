@@ -1,12 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: sans-serif; */
 }
 
-.titlebar img {
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin:8px;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card img {
+  width:100%;
+  border-radius: 5px 5px 0 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+}
+
+a:link {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color:inherit;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
 }
 
 .col-10 {
@@ -28,12 +61,11 @@ body {
   float: left;
 }
 
-.titlebar img {
-	float: left;
+.titlebar img {	
+  float: left;
   max-width: 100%;
   height: auto;
 }
-
 
 .titlename {
   display: flex;
@@ -48,7 +80,7 @@ body {
   align-items: center;
   height: 64px;
   padding: 20px;
-  border: 3px solid black; 
+  border: 1px solid black; 
   font-weight: bold;
 }
 
@@ -76,9 +108,37 @@ img {
   clear: both;
 }
 
+
+
 @media (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
+  }  
+}
+
+@media (max-width: 290px) {
+  h1{
+    font-size: 1em;
   }
 }
+
+@media (min-width: 290px) {
+  h1{
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  h1{
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 658px) {
+  h1{
+    font-size: 2em;
+  }
+}
+
+
 
