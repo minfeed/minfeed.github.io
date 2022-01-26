@@ -49,6 +49,11 @@ a:visited {
 .col-30 {
   width: 30%;
 }
+
+.col-33 {
+  width: 33.3%;
+}
+
 .col-40 {
   width: 40%;
 }
